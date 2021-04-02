@@ -20,6 +20,14 @@ gem 'bootsnap',                   '1.7.2', require: false
 group :development, :test do
   gem 'sqlite3', '1.4.2'
   gem 'byebug',  '11.1.3', platforms: [:mri, :mingw, :x64_mingw]
+
+  # Setup Pry per https://forum.shakacode.com/t/my-pryrc-for-debugging-and-productivity/364
+  gem "pry-byebug"
+  gem "pry-rails"
+  gem "pry-doc"
+  gem "pry-theme"
+  gem "amazing_print"
+  gem "coderay"
 end
 
 group :development do
@@ -38,6 +46,8 @@ group :test do
   gem 'minitest-reporters',       '1.3.8'
   gem 'guard',                    '2.16.2'
   gem 'guard-minitest',           '2.4.6'
+
+  gem "factory_bot_rails"
 end
 
 group :production do
