@@ -22,9 +22,10 @@ group :development, :test do
   gem 'byebug',  '11.1.3', platforms: [:mri, :mingw, :x64_mingw]
 
   # Setup Pry per https://forum.shakacode.com/t/my-pryrc-for-debugging-and-productivity/364
+  gem "awesome_print"
   gem "pry-byebug"
   gem "pry-rails"
-  gem "pry-doc"
+  gem "pry-doc", github: "pry/pry-doc"
   gem "pry-theme"
   gem "amazing_print"
   gem "coderay"
