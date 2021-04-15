@@ -24,6 +24,8 @@ group :development, :test do
   # Setup Pry per https://forum.shakacode.com/t/my-pryrc-for-debugging-and-productivity/364
   gem "awesome_print"
   gem "pry-byebug"
+  # gem "pry"
+  # gem "pry", github: "pry/pry"
   gem "pry-rails"
   gem "pry-doc", github: "pry/pry-doc"
   gem "pry-theme"
